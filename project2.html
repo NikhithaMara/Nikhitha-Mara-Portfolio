@@ -8,7 +8,7 @@
     <meta name="description" content="Sample text for portfolio template meta tag">
     <meta name="keywords" content="Sample text for portfolio template meta tag">
     <meta name="author" content="Sample text for portfolio template meta tag">
-    <title>Project2</title>
+    <title>Project1</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style-project.css">
     <!-- font for the quote -->
@@ -47,73 +47,60 @@
 
     <!-- project name -->
     <section class="w-900 padding center">
-        <h2 class="medium-spacing-halfsize">Project name</h2>
-        <p class="center italic">Project sub-title if needed</p>
+        <h2 class="medium-spacing-halfsize">EBS-Volume-Type-Auto-Conversion-using-AWS-Lambda-and-EventBridge</h2>
     </section>
 
     <!-- about this project -->
     <section class="w-900 padding center">
-        <h3 class="main-title">Your title here</h3>
         <section>
-            <p class="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, eos. Nam fuga sunt reiciendis, minus cumque aut. Esse temporibus quod qui sint accusamus. Aspernatur, soluta aliquid. <span class="bold">Obcaecati quas quo odit!</span>. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, unde ea. Aspernatur adipisci dolores quam commodi optio molestias animi atque rem. Iure esse, veniam laudantium deserunt cupiditate ea! Sequi, nisi!</p>
-            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dignissimos sed at saepe <span class="bold">laboriosam molestiae ipsam</span> quas cupiditate perspiciatis velit corporis, distinctio, dolorem adipisci.</p>
+            <p class="justify">Ensuring organizational compliance for cost and performance is critical. This project demonstrates how AWS Lambda can automate EBS volume type conversion from gp2 to gp3, improving efficiency and enforcing policy. It helped me gain hands-on experience with serverless architectures and event-driven workflows.</p>
         </section>
-    </section>
-
+         <section>
+            <p class="justify">This project automatically converts newly created EBS volumes to gp3 for better performance and cost-efficiency using a serverless, event-driven setup. It showcases a real-world scenario of cloud automation and policy enforcement.</p>
+        </section>
     <section class="w-900 padding">
-        <h3 class="main-title center">Your title here</h3>
-        <p class="justify">Card system for anything you might want to showcase. I used it for showcasing my class system.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ipsa exercitationem explicabo, harum inventore ex mollitia dignissimos eos quae quo dolor quod quisquam quis sunt libero reprehenderit repudiandae adipisci. Facilis.</p>
-        <p class="center">Explore my code on <span class="italic colorful-letter"><a class="link" href="https://github.com/" target="_blank">GitHub </a></span>!</p>
+        <p class="center">Explore my code on <span class="italic colorful-letter"><a class="link" href="https://github.com/NikhithaMara/EBS-Volume-Type-Auto-Conversion-using-AWS-Lambda-and-EventBridge" target="_blank">GitHub </a></span>!</p>
     </section>
     <section class="wrapper">
         <section class="column card">
-            <p class="bold center">Your title here</p>
+            <p class="bold center">Tools & Technologies Used:</p>
             <ul class="no-bullet-list no-padding-list-item">
                 <!-- if you take the span-s out, the fonts won't be that colorful -->
-                <li><span class="colorful-letter">Lorem</span></li>
-                <li><span class="colorful-letter">ipsum</span></li>
-                <li><span class="colorful-letter">dolor</span></li>
-                <li><span class="colorful-letter">sit amet</span></li>
-                <li><span class="colorful-letter">consectetur adipisicing</span></li>
-                <li><span class="colorful-letter">ipsa exercitationem explicabo</span></li>
-                <li><span class="colorful-letter">mollitia dignissimos</span></li>
-                <li><span class="colorful-letter">quod quisquam</span></li>
+                <li><span class="colorful-letter"><b>AWS Lambda: Runs serverless code without managing infrastructure</b></span></li>
+                <li><span class="colorful-letter">Amazon EventBridge (CloudWatch Events): Triggers Lambda on volume creation<b></span></li>
+                <li><span class="colorful-letter"><b>IAM Roles & Policies: Securely manage AWS service access</b></span></li>
+                <li><span class="colorful-letter"><b>Boto3 (Python SDK): Interact with AWS EC2 APIs</b></span></li>
+                  <li><span class="colorful-letter"><b>CloudWatch Logs: Monitor and debug Lambda executions</b></span></li>
             </ul>
         </section>
         <section class="column card">
-            <p class="bold center">Your title here</p>
+            <p class="bold center">Design Issues & Resolutions:</p>
             <ul class="no-bullet-list no-padding-list-item">
-                <li><span class="colorful-letter">Lorem</span></li>
-                <li><span class="colorful-letter">ipsum</span></li>
-                <li><span class="colorful-letter">dolor</span></li>
-                <li><span class="colorful-letter">sit amet</span></li>
-                <li><span class="colorful-letter">consectetur adipisicing</span></li>
-                <li><span class="colorful-letter">ipsa exercitationem explicabo</span></li>
-                <li><span class="colorful-letter">mollitia dignissimos</span></li>
-                <li><span class="colorful-letter">quod quisquam</span></li>
+                <li><span class="colorful-letter"><b>Event Handling: EBS lacks native triggers, so EventBridge acts as the listener to detect volume creation.</span></li>
+                <li><span class="colorful-letter"><b>Security: IAM roles designed with least privilege to allow Lambda access only to necessary resources.</span></li>
+                <li><span class="colorful-letter"><b>Monitoring: CloudWatch logs added for debugging and visibility of automated executions.</span></li>
             </ul>
         </section>
     </section>
 
     <!-- what did i learn -->
     <section class="w-900 padding center baby-pink-light">
-        <h3 class="main-title">Your title here</h3>
-        <ul class="justify padding-list-10">
-            <li class="no-padding-list-item"><span class="bold">I used this section to showcase what did i learn from creating this project!</span> </li>
-            <li class="no-padding-list-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nostrum odit, est quis assumenda numquam nesciunt, perspiciatis rerum veniam totam esse odio tenetur a vel iusto voluptas quasi maiores deserunt.</li>
-            <li class="no-padding-list-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptatum officia dolores commodi dolorem necessitatibus sint voluptate quod esse rem? Recusandae dolorem iure inventore dolore delectus debitis sed in. Labore.</li>
-            <li class="no-padding-list-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt deserunt debitis, possimus maxime ad repudiandae repellendus dolor animi accusamus voluptatem, nisi molestiae, tempora eum unde exercitationem temporibus magnam minus iste!</li>
-            <li class="no-padding-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi aliquam modi nemo illo facere minima fuga vel, itaque natus voluptate rerum odit, accusantium eligendi. Alias ad beatae nulla cumque.</li> 
-            <li class="no-padding-list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore maxime in unde, ad totam nesciunt atque consectetur ipsum sed quisquam deserunt numquam! Amet iusto eaque aliquid facilis odio facere officia!</li>
-            <li class="no-padding-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat pariatur, odio corrupti voluptates fugit aut dicta iste totam veritatis commodi, quasi, eius eos doloremque. Tempora maiores eligendi provident repellendus.</li>
-        </ul>
-</section>
+            <h3 class="main-title">Challenges, Best Practices and Lessons Learned</h3>
+            <ul class="justify padding-list-10">
+                <li class="no-padding-list-item"><b>Challenges:</b> JSON parsing errors, event visibility issues, handling multiple events. </li>
+                <li class="no-padding-list-item"><b>Resolutions:</b> Validated events with CloudWatch logs, applied least privilege IAM, used correct JSON parsing.</li>
+                <li class="no-padding-list-item"><b>Best Practices:</b> Monitor logs, avoid hardcoding credentials, design scalable and secure workflows..</li>
+                <li class="no-padding-list-item"><span class="colorful-letter"><b>Enforces gp3 EBS volumes automatically.</b></span></li>
+                <li class="no-padding-list-item"><span class="colorful-letter"><b>Reduces manual effort and operational overhead by 80%.</span></b></li>
+                <li class="no-padding-list-item"><span class="colorful-letter"><b>Improves storage performance, scalability, and cost efficiency.</b></span></li>
+            </ul>
+    </section>
 
     <p class="wrapper justify-content"><a href="portfolio.html" class="link-no-scale colorful-letter">Back to portfolio</a></p>
 
     <!-- footer -->
-    <footer>@iluskaland 2024</footer>
+    <footer>nikhithamarareddy@gmail.com</footer>
 </body>
+
 
 </html>
