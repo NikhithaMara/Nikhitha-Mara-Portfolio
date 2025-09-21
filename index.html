@@ -147,6 +147,82 @@
     </section>
     </section>
 
+    <!-- Education, Certifications & Experience Tabs -->
+<section>
+    <h3 class="main-title center padding">Education, Certifications & Experience</h3>
+</section>
+
+<div class="tabs">
+    <!-- Tab Buttons -->
+    <div class="tab-buttons">
+        <button class="tab-link active" onclick="openTab(event, 'education')">Education</button>
+        <button class="tab-link" onclick="openTab(event, 'certifications')">Certifications</button>
+        <button class="tab-link" onclick="openTab(event, 'experience')">Experience</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="education" class="tab-content" style="display:block;">
+        <h4>Master of Science in Information Systems</h4>
+        <p class="meta">University of Texas at Arlington (UTA) • Expected 2024</p>
+        <p><strong>Relevant Coursework:</strong> Python, Data Science, Cloud Computing (AWS), Project Management</p>
+
+        <h4>Bachelor of Science in Information Technology</h4>
+        <p class="meta">[Your Bachelor's Institution] • Completed 2021</p>
+    </div>
+
+    <div id="certifications" class="tab-content">
+        <h4>AWS Certified Solutions Architect – Associate</h4>
+    </div>
+
+    <div id="experience" class="tab-content">
+        <h4>Data Science Intern</h4>
+        <p class="meta">Boy Scouts of America</p>
+        <p>Worked on grant migration projects and analyzed which regions were participating in events.</p>
+
+        <h4>ABAP Developer</h4>
+        <p class="meta">IBM</p>
+        <p>Participated in full SDLC including development, testing, and deployment.</p>
+    </div>
+</div>
+
+<!-- Tab styles -->
+<style>
+    .tabs { max-width: 800px; margin: 0 auto; }
+    .tab-buttons { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+    .tab-link {
+        background: #eee;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        border-radius: 6px;
+        transition: background 0.3s;
+    }
+    .tab-link.active, .tab-link:hover { background: #4caf50; color: #fff; }
+    .tab-content h4 { margin: 8px 0 4px; color: #111; }
+    .tab-content p, .tab-content .meta { margin: 2px 0; color: #222; }
+</style>
+
+<!-- Tab script -->
+<script>
+    function openTab(evt, tabName) {
+        const tabContents = document.getElementsByClassName("tab-content");
+        const tabLinks = document.getElementsByClassName("tab-link");
+
+        for (let i = 0; i < tabContents.length; i++) {
+            tabContents[i].style.display = "none";
+        }
+        for (let i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].classList.remove("active");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.classList.add("active");
+    }
+</script>
+
+    
+
     <!-- Projects -->
     <!-- If you have more projects you are working on at the moment, or just want to show more, double the whole section below without the title and you are good to go -->
     <section>
@@ -170,116 +246,6 @@
             <p class="padding-top bottom"><a href="portfolio.html" class="button-outline">Portfolio</a></p>
         </section>
     </section>
-
-    <!-- Education & Certifications -->
-<section>
-    <h3 class="main-title center padding">Education & Certifications</h3>
-</section>
-<section class="wrapper">
-
-    <!-- Education -->
-    <section class="column">
-        <article class="education-item">
-            <header>
-                <h3>Master of Science in Information Systems</h3>
-                <div class="meta">
-                    <span class="school">University of Texas at Arlington (UTA)</span>
-                    <span class="sep">•</span>
-                    <time datetime="2024">Expected 2024</time>
-                </div>
-            </header>
-            <p class="focus"><strong>Focus / Key areas:</strong> Python, DBMS, Data Science, Cloud Computing (AWS), Project Management</p>
-            <div class="coursework">
-                <strong>Relevant coursework:</strong>
-                <ul>
-                    <li>Python Programming for Data & Systems</li>
-                    <li>Database Management Systems (DBMS)</li>
-                    <li>Data Science & Analytics</li>
-                    <li>Cloud Computing — AWS (EC2, S3, IAM, EKS basics)</li>
-                    <li>Project Management for IT</li>
-                </ul>
-            </div>
-        </article>
-
-        <article class="education-item">
-            <header>
-                <h3>Bachelor of Science in Information Technology</h3>
-                <div class="meta">
-                    <span class="school">[Your Bachelor's Institution]</span>
-                    <span class="sep">•</span>
-                    <time datetime="2021">Completed 2021</time>
-                </div>
-            </header>
-            <p class="focus"><strong>Foundation:</strong> Core IT concepts, networking, systems administration, programming fundamentals</p>
-        </article>
-    </section>
-
-    <!-- Certifications -->
-    <section class="column">
-        <article class="certification-item">
-            <header>
-                <h3>Certifications</h3>
-            </header>
-            <ul>
-                <li>AWS Certified Solutions Architect – Associate</li>
-                <li>Certified Kubernetes Administrator (CKA)</li>
-                <li>Terraform Associate Certification</li>
-                <li>Microsoft Azure Fundamentals (AZ-900)</li>
-            </ul>
-        </article>
-    </section>
-
-</section>
-
-<!-- Optional minimal CSS -->
-<style>
-    .education-item, .certification-item {
-        padding: 12px 0;
-        border-bottom: 1px solid #eee;
-    }
-    .education-item:last-child, .certification-item:last-child {
-        border-bottom: none;
-    }
-    .education-item header, .certification-item header {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-    .education-item h3, .certification-item h3 {
-        font-size: 1.1rem;
-        color: #111;
-        margin: 0;
-    }
-    .meta {
-        font-size: 0.9rem;
-        color: #666;
-        display: flex;
-        gap: 8px;
-        align-items: center;
-    }
-    .meta .sep {
-        color: #ccc;
-    }
-    .focus {
-        margin: 8px 0;
-        color: #222;
-    }
-    .coursework ul, .certification-item ul {
-        margin: 6px 0 0 1.2rem;
-        padding: 0;
-    }
-    .coursework li, .certification-item li {
-        margin: 4px 0;
-    }
-    @media (min-width:700px) {
-        .education-item header, .certification-item header {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: baseline;
-        }
-    }
-</style>
-
 
     <!-- contact me -->
     <!-- Five logo can be in one row, and if it still not enough, you can create another row, buy doubleing the "box-contact" section -->
@@ -306,6 +272,7 @@
 <!-- footer -->
     <footer>nikhithamarareddy@gmail.com</footer>
 </html>
+
 
 
 
